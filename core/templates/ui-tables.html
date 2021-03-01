@@ -7,267 +7,93 @@
 
 {% block content %}
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="card ">
-      <div class="card-header">
-        <h4 class="card-title"> Simple Table</h4>
-      </div>
-      <div class="card-body">
-        <div class="table-responsive">
-          <table class="table tablesorter " id="">
-            <thead class=" text-primary">
-              <tr>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Country
-                </th>
-                <th>
-                  City
-                </th>
-                <th class="text-center">
-                  Salary
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Dakota Rice
-                </td>
-                <td>
-                  Niger
-                </td>
-                <td>
-                  Oud-Turnhout
-                </td>
-                <td class="text-center">
-                  $36,738
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Minerva Hooper
-                </td>
-                <td>
-                  Curaçao
-                </td>
-                <td>
-                  Sinaai-Waas
-                </td>
-                <td class="text-center">
-                  $23,789
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Sage Rodriguez
-                </td>
-                <td>
-                  Netherlands
-                </td>
-                <td>
-                  Baileux
-                </td>
-                <td class="text-center">
-                  $56,142
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Philip Chaney
-                </td>
-                <td>
-                  Korea, South
-                </td>
-                <td>
-                  Overland Park
-                </td>
-                <td class="text-center">
-                  $38,735
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Doris Greene
-                </td>
-                <td>
-                  Malawi
-                </td>
-                <td>
-                  Feldkirchen in Kärnten
-                </td>
-                <td class="text-center">
-                  $63,542
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Mason Porter
-                </td>
-                <td>
-                  Chile
-                </td>
-                <td>
-                  Gloucester
-                </td>
-                <td class="text-center">
-                  $78,615
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Jon Porter
-                </td>
-                <td>
-                  Portugal
-                </td>
-                <td>
-                  Gloucester
-                </td>
-                <td class="text-center">
-                  $98,615
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-12">
-    <div class="card  card-plain">
-      <div class="card-header">
-        <h4 class="card-title"> Table on Plain Background</h4>
-        <p class="category"> Here is a subtitle for this table</p>
-      </div>
-      <div class="card-body">
-        <div class="table-responsive">
-          <table class="table tablesorter " id="">
-            <thead class=" text-primary">
-              <tr>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Country
-                </th>
-                <th>
-                  City
-                </th>
-                <th class="text-center">
-                  Salary
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Dakota Rice
-                </td>
-                <td>
-                  Niger
-                </td>
-                <td>
-                  Oud-Turnhout
-                </td>
-                <td class="text-center">
-                  $36,738
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Minerva Hooper
-                </td>
-                <td>
-                  Curaçao
-                </td>
-                <td>
-                  Sinaai-Waas
-                </td>
-                <td class="text-center">
-                  $23,789
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Sage Rodriguez
-                </td>
-                <td>
-                  Netherlands
-                </td>
-                <td>
-                  Baileux
-                </td>
-                <td class="text-center">
-                  $56,142
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Philip Chaney
-                </td>
-                <td>
-                  Korea, South
-                </td>
-                <td>
-                  Overland Park
-                </td>
-                <td class="text-center">
-                  $38,735
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Doris Greene
-                </td>
-                <td>
-                  Malawi
-                </td>
-                <td>
-                  Feldkirchen in Kärnten
-                </td>
-                <td class="text-center">
-                  $63,542
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Mason Porter
-                </td>
-                <td>
-                  Chile
-                </td>
-                <td>
-                  Gloucester
-                </td>
-                <td class="text-center">
-                  $78,615
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Jon Porter
-                </td>
-                <td>
-                  Portugal
-                </td>
-                <td>
-                  Gloucester
-                </td>
-                <td class="text-center">
-                  $98,615
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+<h3>Real Time Monitoring</h3>
+<video  width="75%" height="80%" style="float:left" controls>
+      <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+      <source src="/build/videos/arcnet.io(7-sec).mp4" type=video/mp4>
+    </video><br>
+
+    
+    
+     
+    <label for="views"><h4 style="margin-left:10px;">Select your view:</h4></label> <br>
+    <div id="info"></div>
+
+    <form id="app-cover">
+                <div id="select-box">
+                        <input type="checkbox" id="options-view-button">
+                        <div id="select-button" class="brd">
+                                <div id="selected-value">
+                                    <span style="text-align: justify;">Select a View</span>
+                                </div>
+                                <div id="chevrons">
+                                        <i class="fas fa-chevron-up"></i>
+                                        <i class="fas fa-chevron-down"></i>
+                                </div>
+                        </div>
+                        <div id="options">
+                                <div class="option">
+                                        <input class="s-c top" type="radio" name="platform" value="codepen">
+                                        <input class="s-c bottom" type="radio" name="platform" value="codepen">
+                                        <i class="fab fa-codepen"></i>
+                                        <span class="label">View 1</span>
+                                        <span class="opt-val">View 1</span>
+                                </div>
+                                <div class="option">
+                                        <input class="s-c top" type="radio" name="platform" value="dribbble">
+                                        <input class="s-c bottom" type="radio" name="platform" value="dribbble">
+                                        <i class="fab fa-dribbble"></i>
+                                        <span class="label">View 2</span>
+                                        <span class="opt-val">View 2</span>
+                                </div>
+                                
+                                <div id="option-bg"></div>
+                        </div>
+                </div>
+        </form>
+    
+    <!-- <a href="https://www.youtube.com/channel/UC7hSS_eujjZOEQrjsda76gA/videos" target="_blank" id="ytd-url">My YouTube Channel</a> --> 
+  <br><br><br> <br> <br><br><br> <br> <br> <br> <br> <br>
+  <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Start Monitoring</button>
 </div>
+  <div class="card-body">
+        <div class="table-responsive">
+          <table class="table tablesorter " id="">
+            <thead class=" text-primary">
+              <tr>
+                <th>
+                  People count
+                </th>
+                <th>
+                  Safe
+                </th>
+                <th>
+                  Unsafe
+                </th>
+                <th class="text-center">
+                  Unknown
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                    0
+                </td>
+                <td class="text-center">
+                  0
+                </td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
 
 {% endblock content %}
 

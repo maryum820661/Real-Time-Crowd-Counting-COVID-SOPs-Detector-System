@@ -11,9 +11,15 @@
   <div class="col-md-8">
     <div class="card">
       <div class="card-header">
-        <h5 class="title">Edit Profile</h5>
+        <h6 class="title">Date and Time:</h6>
+        <p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
       </div>
-      <div class="card-body">
+      <!-- <div class="card-body">
         <form>
           <div class="row">
             <div class="col-md-5 pr-md-1">
@@ -86,13 +92,74 @@
             </div>
           </div>
         </form>
+      </div> -->
+      <div class="col-lg-6 col-md-12">
+        <div class=" ">
+          <div class="card-header">
+            <h2 class="card-title"> REPORT GENERATED</h2>
+          </div>
+          <div class="">
+            <div class="">
+              <form>
+              <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Parameters</th>
+                        <th>Count</th>
+                        <th>Safe</th>
+                        <th>Unsafe</th>
+                        <th>With Mask</th>
+                        <th>Without Mask</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>People Count</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="active-row">
+                      <td>People following social
+                        distancing</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>  -----  </td>
+                      <td>  -----  </td>
+                    </tr>
+                    <tr>
+                      <td>People wearing masks</td>
+                      <td>0</td>
+                      <td>  -----  </td>
+                      <td>  -----  </td>
+                      <td>0</td>
+                      <td>0</td>
+                  </tr>
+                    
+                </tbody>
+            </table>
+          
+
+            </div>
+          </div>
+        </div>
       </div>
+    </form>
       <div class="card-footer">
-        <button type="submit" class="btn btn-fill btn-primary">Save</button>
+        <button onclick="myfunc()"  type="submit" class="btn btn-fill btn-primary">Print Report</button>
+        <script type="text/javascript">
+          function myfunc()
+          {
+            window.print();
+          }
+        </script>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
+ <!--  <div class="col-md-4">
     <div class="card card-user">
       <div class="card-body">
         <p class="card-text">
@@ -131,7 +198,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 

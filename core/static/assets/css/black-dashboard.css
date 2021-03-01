@@ -19853,6 +19853,11 @@ Copyright (c) 2015 Daniel Eden
   color: rgba(34, 42, 66, 0.7) !important;
 }
 
+.row1 {
+  display: flex;
+}
+
+n
 .white-content .table>thead>tr>th,
 .white-content .table>tbody>tr>th,
 .white-content .table>tfoot>tr>th,
